@@ -20,6 +20,7 @@ server.post("/bot/webhook", line.middleware(line_config), (req, res, next) => {
 
 exports.handler = (event) => {
   console.log(event);
+  console.log("here");
   const replyToken = JSON.parse(event.body).events[0].replyToken;
 
   let reqMessage = JSON.parse(event.body).events[0].message.text;
