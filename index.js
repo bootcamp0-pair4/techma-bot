@@ -404,5 +404,3 @@ exports.handler = (event) => {
         text: "残高？振込？",
       });
     }
-  }
-};
